@@ -62,5 +62,171 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+<!-----------
+-------------
+------------
+----------->
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body{
+	/* border: dashed red 4px; */
+	width: 100%;
+	margin: auto;
+}
+/* nav and logo */
+nav {
+	background-color: hsl(210, 3%,97%);
+	/*border: dashed red 4px;*/
+	display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    width: 100%;
+	position: fixed; }
+nav a {
+	/* border: dashed red 4px; */
+	padding-top:10px;
+	color: gray;
+	text-decoration: none;
+}
+nav .logo {
+	float:right;
+	margin-right: 10px;
+	vertical-align:bottom;
+}
+
+/********************************************HEADERS**/
+header{
+	padding-top: 50px;
+	/*background-color: darksalmon;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.header-cage{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	width:90%;
+	margin-bottom:15px;
+}
+.header-cage h1{
+	margin: 10px 0;
+}
+.header-cage article{
+	background-color: hsl(0,0%,100%);
+	border: 0 ;
+}
+/***************************************index style specifi**/
+.header-image{
+
+}
+.header-text{
+	/* border: dashed red 4px; */
+ 	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin-top: 25%;
+	font-size: 350%;
+	padding: 0 75px;
+	width: 43%;
+}
+header button { /* border: dashed red 4px; */
+	font-size: 17px;
+	background: hsl(210, 10%, 95%);
+	padding: 3px;
+	border-radius: 4px;
+	border: 1px solid black;
+
+}
+
+/*************************************************************** MAIN CONTENT */
+.container{
+	grid-gap:5px;
+	/*background-color: dodgerblue;*/
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: repeat(3,1fr);
+	padding:50px;
+}
+article{
+	border:1px solid black;
+	border-radius: 1px;
+	display: flex;
+	flex-direction:column;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 25px;
+	background-color: lightgray;
+}
+main button{
+	background-color: white;
+	margin-top: 15px;
+}
+/*  top-articls,  img, and bottom-content */
+
+.exposition {
+	/*border: dashed red 4px;*/
+	overflow: hidden;
+	border-top: 1px solid black;
+	margin-top: 76px;
+	padding-top: 39px;
+	width: 98%;
+}
+#features, #about{
+	width:48%;
+	text-align: justify;
+	display: inline-block;
+	padding: 5px;
+}
+
+
+.exposition .middle-img {
+	width:98%;
+	padding:2%;
+}
+
+#product,#services,#vision{
+	text-align: justify;
+	padding: 5px;
+	display: inline-block;
+	width: 33%;
+}
+
+/****************************************************************ASIDE*/
+aside{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 5px;
+	padding: 50px;
+}
+aside article{
+	background-color: hsl(0,0%,100%);
+	border:0;
+	padding: 0;
+	line-height: 35px;
+}
+article li {
+	list-style: outside square;
+}
+aside img{
+	width:100%;
+	padding-left: 5px;
+}
+/* Contact-address paragraph addresses */
+address {
+	/* border: dashed red 4px; */
+	margin-top: 55px;
+	border-top: 1px solid black;
+	padding: 40px 10px 0;
+}
+address p {
+	margin: 20px 0;
+}
+footer {
+	/* border: dashed red 4px; */
+	margin: 32px 0;
+	text-align: center;
+	font-size: 14px;
+}
+        
